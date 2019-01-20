@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6EEFBCF8-0B2B-4A87-A7B2-EB005D3317E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SchedulerSchedulingSys</RootNamespace>
+    <AssemblyName>SchedulerSchedulingSys</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auditorium.cs" />
+    <Compile Include="Classroom.cs" />
+    <Compile Include="Computer Lab.cs" />
+    <Compile Include="Engineering Lab.cs" />
+    <Compile Include="BookingDetails.cs" />
+    <Compile Include="Lecturer.cs" />
+    <Compile Include="MainLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainLoginForm.Designer.cs">
+      <DependentUpon>MainLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduler.cs" />
+    <Compile Include="SchedulerCompletedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerCompletedForm.Designer.cs">
+      <DependentUpon>SchedulerCompletedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerConfirmationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerConfirmationForm.Designer.cs">
+      <DependentUpon>SchedulerConfirmationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerManageBookingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerManageBookingForm.Designer.cs">
+      <DependentUpon>SchedulerManageBookingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerMakeScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerMakeScheduleForm.Designer.cs">
+      <DependentUpon>SchedulerMakeScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerAdditionalFeaturesAVBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerAdditionalFeaturesAVBForm.Designer.cs">
+      <DependentUpon>SchedulerAdditionalFeaturesAVBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerReleaseScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerReleaseScheduleForm.Designer.cs">
+      <DependentUpon>SchedulerReleaseScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerSeeTimetableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerSeeTimetableForm.Designer.cs">
+      <DependentUpon>SchedulerSeeTimetableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerLoginForm.Designer.cs">
+      <DependentUpon>SchedulerLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="UserAdditionalFeaturesAVBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAdditionalFeaturesAVBForm.Designer.cs">
+      <DependentUpon>UserAdditionalFeaturesAVBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserBookingProcessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserBookingProcessForm.Designer.cs">
+      <DependentUpon>UserBookingProcessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCompletedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserCompletedForm.Designer.cs">
+      <DependentUpon>UserCompletedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserConfirmationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserConfirmationForm.Designer.cs">
+      <DependentUpon>UserConfirmationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLoginForm.Designer.cs">
+      <DependentUpon>UserLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSeeTimetableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSeeTimetableForm.Designer.cs">
+      <DependentUpon>UserSeeTimetableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserWelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserWelcomeForm.Designer.cs">
+      <DependentUpon>UserWelcomeForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainLoginForm.resx">
+      <DependentUpon>MainLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerAdditionalFeaturesAVBForm.resx">
+      <DependentUpon>SchedulerAdditionalFeaturesAVBForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerCompletedForm.resx">
+      <DependentUpon>SchedulerCompletedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerConfirmationForm.resx">
+      <DependentUpon>SchedulerConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerManageBookingForm.resx">
+      <DependentUpon>SchedulerManageBookingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerMakeScheduleForm.resx">
+      <DependentUpon>SchedulerMakeScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerReleaseScheduleForm.resx">
+      <DependentUpon>SchedulerReleaseScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerSeeTimetableForm.resx">
+      <DependentUpon>SchedulerSeeTimetableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerLoginForm.resx">
+      <DependentUpon>SchedulerLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserAdditionalFeaturesAVBForm.resx">
+      <DependentUpon>UserAdditionalFeaturesAVBForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserBookingProcessForm.resx">
+      <DependentUpon>UserBookingProcessForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCompletedForm.resx">
+      <DependentUpon>UserCompletedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserConfirmationForm.resx">
+      <DependentUpon>UserConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLoginForm.resx">
+      <DependentUpon>UserLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSeeTimetableForm.resx">
+      <DependentUpon>UserSeeTimetableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserWelcomeForm.resx">
+      <DependentUpon>UserWelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
